@@ -1,0 +1,87 @@
+.navigation{
+    font-weight: bolder;
+    background-color:  rgb(49, 48, 48);
+    color: antiquewhite;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    width: 100%;
+    font-size: 80px;
+    border: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.create{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 80%;
+    margin-top: 200px;
+    size: box-sizing;
+    color: #f7f2f2;
+    height: 600px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 10%;
+    background-color: rgb(81, 127, 197);
+    border-radius: 10px;
+    padding: 30px
+}
+form{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+input{
+    margin-left: 10px;
+    width: 75%;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 100px;
+}
+
+.age{
+    margin-left: 8%;
+}
+
+.age > input{
+    width: 80%;
+}
+ button{
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    padding: 4px 30px;
+    font-size: 20px;
+    font-weight: bold;
+   
+    margin-left: 50px;
+}
+
+.next{
+    margin-top: 80px;
+}
+.play{
+    margin-top: 150px;
+}
+
+.board > p{
+    margin-top: 150px;
+    font-size: 30px;
+
+}
+.account{
+    position: absolute;
+    width: 40%;
+    text-align: left;
+}
+
+.balance{
+        position: absolute;
+        width: 80%;
+        text-align: right;
+}
+
+.start{
+    margin-top: 180px;
+}
