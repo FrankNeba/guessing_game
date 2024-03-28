@@ -7,14 +7,14 @@ const CreateAccount = () => {
 
             <hr></hr>
             <form>
-                First Name: 
+                
                 <input type="text" placeholder="First Name" required/>
                 <br></br>
-                Last Name: 
+                 
                 <input type="text" placeholder="Last Name" required/>
                 <br></br>
                <div className={classes.age}>
-               Age: 
+               
                 <input  type="number" placeholder="Age" required/>
                 
                </div>

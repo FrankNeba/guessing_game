@@ -5,7 +5,7 @@ class Game extends Component {
      state = {
         show: false,
         balance : 1000,
-     number : Math.floor(Math.random()*6 + 1),
+     number : null,
     }
     start = (con, prev) => {
         this.setState({ show: !this.state.show})
@@ -37,10 +37,13 @@ class Game extends Component {
 
             <div className={classes.balance}>
                 <p>Balance: {this.state.balance}</p>
+                </div >
+            
+            </div>
+            
+           
                 <hr></hr>
-            </div>
-            <button className={classes.start} onClick={this.start}>{this.state.show ? "stop" : "start"}</button>
-            </div>
+                <div className= {classes.start}><button onClick={this.start}>{this.state.show ? "stop" : "start"}</button></div>
 
             <div style={{display:this.state.show? "block" : "none"}}>
             <div className={classes.board}> 
