@@ -2,7 +2,7 @@ import classes from './App.module.css'
 import Game from './game';
 import './App.css';
 import React, { Component }from 'react';
-import CreateAccount from './createAccount';
+import Welcome from './welcome';
 class App extends Component  {
   state = {
       startgame: false,
@@ -39,7 +39,9 @@ clicked = (pos) =>{
 }
 
   next =  () => {
-    this.setState({startgame: !this.state.startgame})
+    this.setState({startgame: !this.state.startgame,
+    show: false,
+  balance: 1000,})
    console.log(this.state.startgame)
   }
   render(){
@@ -51,7 +53,7 @@ clicked = (pos) =>{
         
       </header></div>
       <div>
-        <CreateAccount startgamestate = {this.next} startgame = {this.state.startgame}/>
+        <Welcome startgamestate = {this.next} startgame = {this.state.startgame}/>
       </div>
 
       <div>
