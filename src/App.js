@@ -15,6 +15,7 @@ class App extends Component  {
     this.setState({ 
       show: !this.state.show,
       number: null,
+      result: null,
     })
 }
 

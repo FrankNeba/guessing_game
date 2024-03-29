@@ -7,13 +7,12 @@ const Game = (props) => {
    
     return (
         <div className={classes.create} style = {{display: props.startgame? "block" : "none"}}> 
-            <div className={classes.head}>
-            <div >
-                <p className={classes.account}>Account: demo</p>
+            <div className= {classes.details}>
+                <p className={classes.account}>Account: demo </p>
                 <p  className={classes.balance}>Balance: {props.balance}</p>
                 </div >
             
-            </div>
+           
             
            
                 <hr></hr>
