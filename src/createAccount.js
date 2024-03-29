@@ -1,9 +1,10 @@
 import React from "react";
 import classes from './App.module.css';
-const CreateAccount = () => {
+const CreateAccount = (props) => {
     return(
-        <div className={classes.create}>
-            <h1>Create Account</h1>
+        <div className={classes.create} style = {{display: props.startgame? "none":"block" }}>
+           <div style = {{marginLeft: "130px"}}><h1>Create Account</h1></div>   
+           
 
             <hr></hr>
             <form>
@@ -18,7 +19,7 @@ const CreateAccount = () => {
                 <input  type="number" placeholder="Age" required/>
                 
                </div>
-               <button className={classes.next}>Next</button>
+               <button className={classes.next} onClick={props.startgamestate}> Next</button>
             </form>
         </div>
 
