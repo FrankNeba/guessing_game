@@ -106,10 +106,10 @@ input{
 
 .details{
     position: fixed;
-    top: 10%;
-   
+    top: 14%;
+   background-color: white;
     padding: 0px  5px;
-    
+    min-width: 100%;
     left: 0;
     color: rgb(18, 131, 3);
     font-weight: bold;
