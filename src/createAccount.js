@@ -19,8 +19,9 @@ const CreateAccount = (props) => {
                 <input  type="number" placeholder="Age" required/>
                 
                </div>
-               <button className={classes.next} onClick={props.startgamestate}> Next</button>
+               
             </form>
+            <button className={classes.next} onClick={props.startgamestate}> Next</button>
         </div>
 
     );
