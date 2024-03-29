@@ -4,27 +4,27 @@
     color: antiquewhite;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 10px;
-    width: 100%;
+    min-width: 100%;
     font-size: 80px;
     border: none;
     position: fixed;
     top: 0;
     left: 0;
 }
-.account{
-    align-items: center;
-}
+
 .create{
    
+     transition: opacity 5s ease-in-out;
+     opacity: 1;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     max-width: 80%;
     margin-top: 200px;
     
     color: rgb(81, 127, 197);
-    max-height: 600px;
+    min-height: 400px;
     font-size: 20px;
     text-align: center;
-    margin: center;
+    margin-inline:auto;
     background-color: rgb(237, 248, 175);
     border-radius: 50px;
     padding: 25px;
@@ -60,7 +60,7 @@ input{
     font-weight: bold;
    background-color: rgb(81, 127, 197);;
    color: white;
-    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .next{
@@ -70,7 +70,7 @@ input{
     margin-top: 150px;
 }
 .board{
-    text-align: center;
+   margin-inline: auto;
 }
 
 .board > p{
@@ -78,18 +78,10 @@ input{
     font-size: 30px;
     position: relative;
     text-align: center;
-    margin-left: 100px;
+   
 
 }
-.account{
-    text-align: left;
-    position: relative;
-}
-.balance{
-        text-align: left;
-        position: absolute;
-        float: right;
-}
+
 .start{
     margin-top: 50px;
     text-align: center;

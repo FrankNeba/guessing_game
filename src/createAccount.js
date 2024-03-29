@@ -3,7 +3,7 @@ import classes from './App.module.css';
 const CreateAccount = (props) => {
     return(
         <div className={classes.create} style = {{display: props.startgame? "none":"block" }}>
-           <div style = {{marginLeft: "130px"}}><h1>Create Account</h1></div>   
+           <div ><h1>Create Account</h1></div>   
            
 
             <hr></hr>
