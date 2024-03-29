@@ -9,6 +9,7 @@ class App extends Component  {
       show: false,
         balance : 1000,
      number : null,
+     result: null,
   }
   start = (con, prev) => {
     this.setState({ 
@@ -24,15 +25,15 @@ clicked = (pos) =>{
     
     console.log(number)
     if(pos === 1 && number < 4){
-        this.setState({balance: this.state.balance + 1000})
+        this.setState({balance: this.state.balance + 1000, result: "win"})
     } 
     else if(pos === 2 && number === 4){
-        this.setState({balance: this.state.balance + 1000})
+        this.setState({balance: this.state.balance + 1000, result: "win"})
     }
     else if(pos === 3 && number > 4){
-        this.setState({balance: this.state.balance + 1000})
+        this.setState({balance: this.state.balance + 1000, result: "win"})
     }
-    else {this.setState({balance: this.state.balance - 1000})}
+    else {this.setState({balance: this.state.balance - 1000, result: "fail"})}
 
 }
 
@@ -43,16 +44,17 @@ clicked = (pos) =>{
   render(){
   return (
     <div className="App">
+      <div className={classes.navigation}>
       <header >
-        <nav className= {classes.navigation}>GUESSING</nav>
-        <hr></hr>
-      </header>
+        <nav >GUESSING</nav>
+        
+      </header></div>
       <div>
         <CreateAccount startgamestate = {this.next} startgame = {this.state.startgame}/>
       </div>
 
       <div>
-      <Game startgame = {this.state.startgame} startgamestate = {this.next} balance = {this.state.balance} show= {this.state.show} start = {this.start} number = {this.state.number} clicked = {this.clicked}/>
+      <Game startgame = {this.state.startgame} result = {this.state.result} startgamestate = {this.next} balance = {this.state.balance} show= {this.state.show} start = {this.start} number = {this.state.number} clicked = {this.clicked}/>
       </div>
 
       <br></br>

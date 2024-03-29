@@ -22,7 +22,8 @@ const Game = (props) => {
 
             <div style={{display:props.show? "block" : "none"}}>
             <div className={classes.board}> 
-                <p>{props.number != null ? "Number: " + props.number: null}</p> 
+                <p>{props.number != null ? "Number: " + props.number: null}</p>
+                <p style = {{color: props.result === "fail"? "red": "green", fontWeight: "bolder"}}>{props.result}</p> 
             </div>
 
             <div className={classes.botton}>
