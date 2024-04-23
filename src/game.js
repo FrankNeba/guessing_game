@@ -16,9 +16,12 @@ const Game = (props) => {
             
            
                 <hr></hr>
-                <div className= {classes.start}><button onClick={props.startgamestate}>exit</button></div>
+                <div className={classes.refresh}>
+                    <div className= {classes.start}><button onClick={props.startgamestate}>exit</button></div>
                 <div className= {classes.start}><button onClick={props.start}>{props.show ? "stop" : "start"}</button></div>
 
+                </div>
+                
             <div style={{display:props.show? "block" : "none"}}>
             <div className={classes.board}> 
                 <p>{props.number != null ? "Number: " + props.number: null}</p>

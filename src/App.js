@@ -11,12 +11,19 @@ class App extends Component  {
      number : null,
      result: null,
   }
+
+  // funtion that starts and stop game. works with the start button
   start = (con, prev) => {
+    const show = !this.state.show
     this.setState({ 
-      show: !this.state.show,
+      show: show,
       number: null,
       result: null,
     })
+
+    if(show){
+      this.setState ({balance: 1000})
+    }
 }
 
 clicked = (pos) =>{
