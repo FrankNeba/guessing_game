@@ -1,15 +1,18 @@
 import React from "react";
 import classes from './App.module.css'
+import { Link } from "react-router-dom";
 // import classes from './test.module.css'
 const Game = (props) => {
     
     
    
     return (
-        <div className={classes.create} style = {{display: props.startgame? "block" : "none"}}> 
+        <div className={classes.create} > 
             <div className= {classes.details}>
-                <p className={classes.account}>Account: demo </p>
-                <p  className={classes.balance}>Balance: {props.balance}</p>
+                <div><p className={classes.account}>User: {props.name} </p></div>
+               <div><p  className={classes.balance}>score: {props.balance}</p></div> 
+                 <div className={classes.highestScore}><p className={classes.score}>Highest score: {props.highestScore} </p></div> 
+                    
                 </div >
             
            
@@ -17,8 +20,8 @@ const Game = (props) => {
            
                 <hr></hr>
                 <div className={classes.refresh}>
-                    <div className= {classes.start}><button onClick={props.startgamestate}>exit</button></div>
-                <div className= {classes.start}><button onClick={props.start}>{props.show ? "stop" : "start"}</button></div>
+                    <div className= {classes.start}><button onClick={props.startgamestate}><Link to="/" className={classes.button}>exit </Link></button></div>
+                <div className= {classes.start}><button  onClick={props.start}>{props.show ? "stop" : "start"}</button></div>
 
                 </div>
                 
