@@ -1,6 +1,6 @@
 import React from "react";
 import classes from './App.module.css'
-
+// import classes from './test.module.css'
 const Game = (props) => {
     
     
@@ -24,7 +24,7 @@ const Game = (props) => {
                 
             <div style={{display:props.show? "block" : "none"}}>
             <div className={classes.board}> 
-                <p>{props.number != null ? "Number: " + props.number: null}</p>
+                <p>{props.number != null ?  props.number: null}</p>
                 <p style = {{color: props.result === "fail"? "red": "green", fontWeight: "bolder"}}>{props.result}</p> 
             </div>
 
