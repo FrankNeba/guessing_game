@@ -11,7 +11,7 @@ const Welcome = (props) => {
            <h3>How to play</h3>
            
             <p>Predict if the next number to be generated will be less than, equal to or greater than 4.</p>
-            <p> if your guess is correct   then your score will be increased by 5 else it will be reduced by 5</p>
+            <p> if your guess is correct then your score will be increased by 5 else it will be reduced by 5</p>
             <p>Click next below to begin</p>
             <p>Click start to start playing</p>
             <p>Click stop to stop and reset the game</p>
