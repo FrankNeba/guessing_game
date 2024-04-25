@@ -142,6 +142,13 @@ input{
 
 }
 
+@media screen  and (max-width: 600px){
+    .details{
+        gap: 0;
+    }
+    
+}
+
 .refresh{
     display: inline-flex;
     gap: 20%;
