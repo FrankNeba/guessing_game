@@ -114,7 +114,9 @@ input{
 .start{
     margin-top: 50px;
     text-align: center;
-    margin-left: 10px;
+    margin-left: 4px;
+    margin-right: 4px;
+   
 }
 
 .details{
@@ -154,7 +156,7 @@ input{
 
 .refresh{
     display: inline-flex;
-    gap: 20%;
+    
     text-align: center;
 }
 
