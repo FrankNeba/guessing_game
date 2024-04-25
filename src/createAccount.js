@@ -1,7 +1,7 @@
 import React from "react";
 import classes from './App.module.css';
 import { useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
+
 
 const CreateAccount = (props) => {
 const navigate = useNavigate()
