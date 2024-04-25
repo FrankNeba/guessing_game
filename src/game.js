@@ -9,9 +9,9 @@ const Game = (props) => {
     return (
         <div className={classes.create} > 
             <div className= {classes.details}>
-                <div><p className={classes.account}>User: {props.name} </p></div>
-               <div><p  className={classes.balance}>score: {props.balance}</p></div> 
-                 <div className={classes.highestScore}><p className={classes.score}>Highest score: {props.highestScore} </p></div> 
+                <div><p className={classes.account}>User <p style = {{color:"red"}}>{props.name}</p> </p></div>
+               <div><p  className={classes.balance}>score <p style = {{color:"red"}}>{props.balance}</p></p></div> 
+                 <div className={classes.highestScore}><p className={classes.score}>Highest score <p style = {{color:"red"}}>{props.highestScore}</p> </p></div> 
                     
                 </div >
             

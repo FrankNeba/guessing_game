@@ -144,15 +144,26 @@ input{
 
 }
 
-@media screen  and (max-width: 600px){
+@media screen  and (max-width: 875px){
     .details{
-        gap: 0;
+        gap: 20%;
     }
     .details > div{
         margin-left: 10px;
     }
-    
+
 }
+
+@media screen  and (max-width: 450px){
+    .details{
+        gap: 10px;
+    }
+    .details > div{
+        margin-left: 10px;
+        }
+    }
+
+    
 
 .refresh{
     display: inline-flex;
