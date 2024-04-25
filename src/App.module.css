@@ -146,6 +146,9 @@ input{
     .details{
         gap: 0;
     }
+    .details > div{
+        margin-left: 10px;
+    }
     
 }
 
