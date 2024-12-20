@@ -20,28 +20,31 @@ const navigate = useNavigate()
             <hr></hr>
             <form  onSubmit={submited}>
                 
-                <input 
+                {/* <input 
                 type="text" 
                 placeholder="First Name" 
                 required
                 onChange={(e) => props.getFname(e.target.value)}
                 />
-                <br></br>
+                <br></br> */}
                  
-                <input 
+                {/* <input 
                 type="text" 
                 placeholder="Last Name"
                  required
-                 onChange={(e) => props.getLname(e.target.value)}/>
+                 onChange={(e) => props.getLname(e.target.value)}/> */}
                 <br></br>
                <div className={classes.age}>
                
-                <input  
+                {/* <input  
                 type="number" 
                 placeholder="Age"
                  required
-                 onChange={(e) => props.getAge(e.target.value)}/>
-
+                 onChange={(e) => props.getAge(e.target.value)}/> */}
+                 <div>
+                     <p>Enter Username:</p>
+                 </div>
+               
                 
                 <input 
                 type="text" 

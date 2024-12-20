@@ -9,9 +9,9 @@ const Game = (props) => {
     return (
         <div className={classes.create} > 
             <div className= {classes.details}>
-                <div><p className={classes.account}>User <p style = {{color:"red"}}>{props.name}</p> </p></div>
-               <div><p  className={classes.balance}>score <p style = {{color:"red"}}>{props.balance}</p></p></div> 
-                 <div className={classes.highestScore}><p className={classes.score}>Highest score <p style = {{color:"red"}}>{props.highestScore}</p> </p></div> 
+                <div><p className={classes.account}>User <p className={classes.blue}>{props.name}</p> </p></div>
+               <div><p  className={classes.balance}>score <p className={classes.blue}>{props.balance}</p></p></div> 
+                 <div className={classes.highestScore}><p className={classes.score}>Highest score <p className={classes.blue}>{props.highestScore}</p> </p></div> 
                     
                 </div >
             
@@ -25,7 +25,7 @@ const Game = (props) => {
 
                 </div>
                 
-            <div style={{display:props.show? "block" : "none"}}>
+            <div style={{display:props.show? "block" : "none"}} className={classes.gameboard}>
             <div className={classes.board}> 
                 <p>{props.number != null ?  props.number: null}</p>
                 <p style = {{color: props.result === "fail"? "red": "green", fontWeight: "bolder"}}>{props.result}</p> 
