@@ -1,0 +1,21 @@
+{
+    "name": "React App Development Environment",
+    "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:0-18",
+    "forwardPorts": [
+      3000
+    ],
+    "customizations": {
+      "vscode": {
+        "settings": {
+          "javascript.validate.enable": true,
+          "eslint.enable": true
+        },
+        "extensions": [
+          "dbaeumer.vscode-eslint",
+          "esbenp.prettier-vscode",
+          "msjsdiag.debugger-for-chrome"
+        ]
+      }
+    },
+    "postCreateCommand": "npm install"
+  }

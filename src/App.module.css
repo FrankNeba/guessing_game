@@ -154,7 +154,7 @@ input{
     font-weight: bold;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     /* gap: 30%; */
 
 
@@ -195,11 +195,24 @@ input{
     text-align: center;
 }
 
+
+
+@media screen and (min-width: 420px){
+    .botton{
+        display: flex;
+        width: 80%;
+        justify-content: space-around;
+    }
+}
+
 .botton{
-    display: flex;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+        "item1 item2"
+        "item3 item3";
     width: 80%;
     justify-content: space-around;
 }
-
-
 
