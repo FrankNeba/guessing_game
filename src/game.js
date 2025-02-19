@@ -38,7 +38,7 @@ const Game = (props) => {
             setUsername(data.username);
             setScore(data.score);
             setHigh(data.highestScore);
-            setBalance(data.highestScore); // Initialize balance with highest score
+            // setBalance(data.highestScore); // Initialize balance with highest score
         } catch (error) {
             console.log(error);
         } finally {
@@ -65,7 +65,7 @@ const Game = (props) => {
             newResult = 'fail';
         }
 
-        setBalance(newBalance);
+        // setBalance(newBalance);
         setResult(newResult);
 
         fetchData(newBalance);
