@@ -14,15 +14,7 @@ const Game = (props) => {
     const [high, setHigh] = useState(0)
     const [loading, setLoading] = useState(false)
 
-useEffect( () => {
-   
 
-    
-
-    fetchData(0)
-
-
-}, [])
 
 const fetchData = async (scor) => {
      const url = `${baseUrl}/api/play/`
@@ -58,14 +50,25 @@ const fetchData = async (scor) => {
     }}
 
 
-// const [number, setNumber] = useState(0)
+useEffect( () => {
+   
+
+    
+
+    fetchData(0)
+
+
+}, [])
+
+
+const [number, setNumber] = useState(0)
 const [balance, setBalance] = useState(high)
 const [result, setResult] = useState('')
 
     
 const clicked = (pos) =>{
     let number = Math.floor(Math.random()*6 + 1)
-    // setNumber(number)
+    setNumber(number)
     
     let score
     console.log(number)
@@ -118,7 +121,7 @@ const clicked = (pos) =>{
                 
             <div style={{display:props.show? "block" : "none"}} className={classes.gameboard}>
             <div className={classes.board}> 
-                <p>{score != null ?  score: null}</p>
+                <p>{number != null ?  number: null}</p>
                 <p style = {{color: result === "fail"? "red": "green", fontWeight: "bolder"}}>{result}</p> 
             </div>
 
