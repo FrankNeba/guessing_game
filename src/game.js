@@ -21,7 +21,7 @@ useEffect( () => {
     fetchData(0)
 
 
-}, [])
+}, [fetchData])
 
 const fetchData = async (score) => {
      const url = `${baseUrl}/api/play/`
