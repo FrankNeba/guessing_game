@@ -29,6 +29,7 @@ const fetchData = async (score) => {
     if(!access){
         navigate('/login')
     }
+    // alert(window.location.protocol)
 
     try{
     const response = await fetch(url, {
@@ -60,7 +61,7 @@ const [result, setResult] = useState('')
     
 const clicked = (pos) =>{
     let number = Math.floor(Math.random()*6 + 1)
-    setNumber(number)
+    // setNumber(number)
     
     let score
     console.log(number)
