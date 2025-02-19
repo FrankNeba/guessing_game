@@ -57,10 +57,6 @@ const submit = async (e) => {
    
 }
 
- const submited = async (e) => {
-    e.preventDefault();
-    navigate("/game")
- } 
 
     return(
 

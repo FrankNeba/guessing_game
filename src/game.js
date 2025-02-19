@@ -53,7 +53,7 @@ const fetchData = async (score) => {
     }}
 
 
-const [number, setNumber] = useState(0)
+// const [number, setNumber] = useState(0)
 const [balance, setBalance] = useState(high)
 const [result, setResult] = useState('')
 
