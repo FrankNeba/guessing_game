@@ -10,7 +10,7 @@ const Game = (props) => {
     const [high, setHigh] = useState(0);
     const [loading, setLoading] = useState(false);
     const [number, setNumber] = useState(0);
-    const [balance, setBalance] = useState(0);
+    // const [balance, setBalance] = useState(0);
     const [result, setResult] = useState('');
 
     const fetchData = useCallback(async (scor) => {
@@ -48,13 +48,13 @@ const Game = (props) => {
 
     useEffect(() => {
         fetchData(0);
-    }, [fetchData]); // ✅ Added fetchData as a dependency
+    }, [fetchData]); // Added fetchData as a dependency
 
     const clicked = (pos) => {
         let randomNumber = Math.floor(Math.random() * 6 + 1);
         setNumber(randomNumber);
 
-        let newBalance = balance;
+        let newBalance = score;
         let newResult = '';
 
         if ((pos === 1 && randomNumber < 4) || (pos === 2 && randomNumber === 4) || (pos === 3 && randomNumber > 4)) {
