@@ -9,9 +9,10 @@ const Game = (props) => {
     
 
     const navigate = useNavigate()
-    const [username, setUsername] = useState('')
+    const [username, setUsername] = useState('User')
     const [score, setScore] = useState(0)
     const [high, setHigh] = useState(0)
+    const [loading, setLoading] = useState(false)
 
 useEffect( () => {
    
@@ -21,9 +22,9 @@ useEffect( () => {
     fetchData(0)
 
 
-}, [fetchData])
+}, [])
 
-const fetchData = async (score) => {
+const fetchData = async (scor) => {
      const url = `${baseUrl}/api/play/`
     const access = localStorage.getItem('access')
     if(!access){
@@ -32,6 +33,7 @@ const fetchData = async (score) => {
     // alert(window.location.protocol)
 
     try{
+        setLoading(true)
     const response = await fetch(url, {
         method: 'PATCH',
         headers:{
@@ -39,7 +41,7 @@ const fetchData = async (score) => {
             'Authorization': `Bearer ${access}`
         },
         body: JSON.stringify({
-            'score': score
+            'score': scor
         })
     })
     const data = await response.json()
@@ -47,9 +49,11 @@ const fetchData = async (score) => {
     setUsername(data.username)
     setScore(data.score)
     setHigh(data.highestScore)
+    setLoading(false)
     }
     catch(error){
         console.log(error)
+        setLoading(false)
 
     }}
 
@@ -119,9 +123,9 @@ const clicked = (pos) =>{
             </div>
 
             <div className={classes.botton}>
-                <button className={classes.play} onClick={() => clicked(1)}>{"< 4"}</button>
-                <button className={classes.play} onClick={() => clicked(2)}>{"= 4"}</button>
-                <button className={classes.play} onClick={() => clicked(3)}>{"> 4"}</button>
+                <button className={classes.play} onClick={() => clicked(1)}>{loading? 'loading' : "< 4"}</button>
+                <button className={classes.play} onClick={() => clicked(2)}>{loading? 'loading' : "= 4"}</button>
+                <button className={classes.play} onClick={() => clicked(3)}>{loading? 'loading' : "> 4"}</button>
             </div>
             </div>
 

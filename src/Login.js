@@ -97,7 +97,7 @@ const submit = async (e) => {
                 
                 
                </div>
-                <button className={classes.next} onClick={props.startgamestate} type="submit"> Signup</button>
+                <button className={classes.next} onClick={props.startgamestate} type="submit"> Login</button>
                 <div className={classes.new}>
                     <p>No account?</p> 
                     <Link to='/signup'>Signup</Link>
