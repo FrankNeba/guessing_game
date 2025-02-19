@@ -5,6 +5,7 @@ import React, { Component }from 'react';
 import Welcome from './welcome';
 import { Route, Routes } from 'react-router-dom';
 import CreateAccount from './createAccount';
+import Login from './Login';
 
 class App extends Component  {
   state = {
@@ -117,7 +118,8 @@ clicked = (pos) =>{
       <Routes>
         <Route path="/" element = {<Welcome startgamestate = {this.next} startgame = {this.state.startgame}/>} />
         <Route path="/game" element ={<Game highestScore = {this.state.highestScore} startgame = {this.state.startgame} result = {this.state.result} startgamestate = {this.next} balance = {this.state.balance} show= {this.state.show} start = {this.start} number = {this.state.number} clicked = {this.clicked} name = {this.state.user}/>} />
-        <Route path = "/info" element = {<CreateAccount getAge = {this.getAge} getFname = {this.getFname} getLname = {this.getLname} getUser = {this.getUser} startgamestate= {this.next} />} />
+        <Route path = "/signup" element = {<CreateAccount getAge = {this.getAge} getFname = {this.getFname} getLname = {this.getLname} getUser = {this.getUser} startgamestate= {this.next} />} />
+        <Route path='/login' element={<Login />} />
       </Routes>
     
         

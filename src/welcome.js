@@ -16,7 +16,7 @@ const Welcome = (props) => {
             <p>Click start to start playing</p>
             <p>Click stop to stop and reset the game</p>
             <p>Click exit to exit the game</p>
-            <button className={classes.next}> <Link to= "/info" className={classes.button}>Next</Link> </button>
+            <button className={classes.next}> <Link to= "/signup" className={classes.button}>Next</Link> </button>
         </div>
 
     );
