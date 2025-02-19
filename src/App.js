@@ -99,6 +99,7 @@ clicked = (pos) =>{
   balance: 0,
   highestScore: 0,})
    console.log(this.state.startgame)
+   localStorage.removeItem('access')
   }
   render(){
   return (
